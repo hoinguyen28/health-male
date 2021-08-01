@@ -1,0 +1,16 @@
+.btn{
+    padding: 9px 13px;
+    background-color: $carot;
+    font-size: 15.7px;
+}
+.button{
+    padding: 20px 0;
+    border-bottom: 1px solid $carot;
+    position: relative;
+    a{
+        position: absolute;
+        top: 50%;
+        right: 42%;
+    }
+
+}

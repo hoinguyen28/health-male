@@ -1,0 +1,31 @@
+.services{
+    margin: 88px 0 66px 0;
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p{
+        color: #fff;
+    }
+    &__member{
+        width: 23%;
+        margin-right: 30px;
+        &:nth-child(4n){
+            margin-right: 0;
+        }
+        background-color: $background;
+    }
+    img{
+        height:273px ;
+        width: 100%;
+    }
+    &__content{
+        margin: 10px 15px;
+        padding-bottom: 30px;
+        p{
+            margin: 13px 0 30px 0;
+            line-height: 1.54;
+        }
+        
+    }
+}

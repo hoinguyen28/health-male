@@ -1,0 +1,16 @@
+.about{
+    margin-bottom: 80px;
+    &__content{
+        p{
+            color: $background;
+            line-height: 1.7;
+            font-size: 15.8px;
+            margin: 12px 0;
+        }
+        h3{
+            font-size: 39.3px;
+        }
+        margin-bottom: 25px;
+    }
+    
+}

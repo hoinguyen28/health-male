@@ -1,0 +1,45 @@
+.questions{
+    margin: 55px 0 65px 0;
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 102px;
+    }
+    &__wrap{
+        width: calc((100% - 90px)/3);
+        margin-left: 15px;
+        margin-right: 15px;
+        &:nth-child(3n){
+            margin-right: 0px;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            color: $carot;
+        }
+        a{
+            color: $blu--text;
+        }
+    }
+    &__time{
+        display: flex;
+        margin: 28px 20px;
+        img{
+            width: auto;
+            height: 20px;
+        }
+    }
+    &__text{
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    &__button{
+        margin-left: 10px;
+    }
+   
+    
+
+
+}

@@ -1,0 +1,62 @@
+.subscribe{
+    background-color:$blu;
+    &__content{
+        text-align: center;
+        padding-top: 59px;
+        h2{
+            color: $blu--text;
+            font-size: 41.4px;
+        }
+        p{
+            color: $blu--text;
+            margin: 14px 0;
+            line-height: 1.7;
+        }
+    }
+    &__form{
+        justify-content: center;
+        font-size: 14px;
+        display: flex;
+        text-align: start;
+        justify-content: center;
+        &__left-form {
+            margin-right: 25px;
+            order: 1;
+        }
+        &__member {
+            width: 20px;
+            height: 20px;
+            line-height: 0;
+            margin: 0;
+        }
+    
+        &__right-form {
+            text-align: start;
+            margin-left: 25px;
+            order: 2;
+        }
+    
+        &__iterm {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    &__in{
+        margin: 10px 0;
+        width: 354px;
+        height: 40px;
+        border: none;
+    } 
+    &__lable{
+        color: $blu--text;
+    }
+    &__select{
+        width: 354px;
+        height: 40px;
+        border: none;
+        color: $blu--text;
+        option{
+            color: $blu--text;
+        }
+    }
+}

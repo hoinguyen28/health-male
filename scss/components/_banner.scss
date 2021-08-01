@@ -1,0 +1,43 @@
+.banner{
+    position: relative;
+    img{
+        height: 664px;
+        width: 100%;
+    }
+    &__content{
+        position: absolute;
+        transform: translateY(-50%);
+        max-width: 650px;
+        left: calc((100% - #{$container-width})/2);
+        top: 49.2%;
+        p{
+            margin: 10px 0 32px 0;
+        }
+    }
+    &__text{
+        position: absolute;
+        bottom: 0;
+        background-color: $carot;
+        width: 100%;
+        height: 113px;
+    }
+    &__wrap{
+        margin: 23px 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        a{
+            position: absolute;
+            right: 0px;
+            background-color: #ffff;
+            color: $carot;
+            margin: 5px 9px 0 0;
+        }
+        p{
+            margin: 6px 0;
+        }
+    }
+    
+    
+    
+}

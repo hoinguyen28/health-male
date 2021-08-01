@@ -1,0 +1,4 @@
+@mixin format ($count:4){
+    width: ((100% - (#{$count}-1)*30px)/$count);
+    margin-right: 30px;
+}  
