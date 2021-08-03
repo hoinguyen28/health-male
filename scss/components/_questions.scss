@@ -38,6 +38,43 @@
     &__button{
         margin-left: 10px;
     }
+    &__wrap-mobile{
+        display: none;
+    }
+    @media (max-width:768px) {
+        &__wrap{
+            display: none;
+        }
+        &__wrap-mobile{
+            width: 100%;
+            display: block;
+        }
+        img{
+            width: 100%;
+        }
+        &__time{
+            display: flex;
+            margin: 28px 12px;
+            img{
+            width: auto;
+            height: 20px;
+            }
+            p{
+                color: $carot;
+            }
+        }
+        &__text{
+            a{
+                color: $blu--text;
+            }
+        }
+        &__button{
+            a{
+                color: $blu--text;
+                box-shadow: 0 1px $blu--text;
+            }
+        }
+    }
    
     
 

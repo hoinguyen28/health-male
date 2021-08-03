@@ -1,0 +1,126 @@
+.contact{
+    background-color: $brown;
+    padding-bottom: 24px;
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 50px;
+        margin-bottom: 13px;
+    }
+    &__logo{
+        width: 245px;
+        img{
+            width: 215px;
+        }
+    }
+    &__menu{
+        width: 250px;
+        padding-top: 4px;
+        li{
+            font-size: 17px;
+            padding-bottom: 19px;
+        }
+        a{
+            color: $blu--text;
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        a {
+            display: block;
+        }
+        flex: 0 0 auto;
+    }
+
+    &__link {
+        width: 36px;
+        height: 36px;
+        background: $blu;
+        border-radius: 50%;
+        overflow: hidden;
+        text-indent: -999px;
+        margin-bottom: 10px;
+    }
+    &__content{
+        margin-top: 13px;
+        margin-bottom: 23px;
+        p{
+            color: $blu--text;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+    }
+    &__p{
+        color: $blu--text;
+        text-align: center;
+        margin-top: 24px;
+        line-height: 1.72;
+    }
+    &__logo1 {
+        width: 100%;
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0;
+        align-items: center;
+        justify-content: center;
+        a{
+            margin-right: 21px;
+            &:last-child{
+                margin-left: 0;
+            }
+        }
+        img {
+            height: 37px;
+            width: auto;
+        }
+    }
+    @media (max-width:768px) {
+        &__logo{
+            order: 1;
+            width: 100%;
+            text-align: center;
+        }
+        &__icon{
+            order: 2;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 30px 0;
+            a{
+                margin: 0 10px;
+            }
+        }
+        &__menu{
+            order: 3;
+            width: 50%;
+        }
+        
+        
+    }
+}
+.fb {
+    background: $blu url('../assest/facebook.svg') no-repeat 50% 50%;
+    background-size: 10px;
+}
+.tw{
+    
+    background: $blu url('../assest/twitter.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
+.yt{
+
+    background: $blu url('../assest/youtube.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
+.ins{
+
+    background: $blu url('../assest/instagram.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}
+.in {
+
+    background: $blu url('../assest/linkedin.svg') no-repeat 50% 50%;
+    background-size: 16px;
+}

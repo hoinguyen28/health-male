@@ -11,8 +11,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+    ></script>
     <title>NGUYEN SY HOI</title>
 </head>
+<script>
+    $(document).ready(function () {
+        $(".header__menu-mobile").click(function () {
+            $(this).parents(".header__content") 
+            $(".header__menu").slideToggle();
+            $(this).parents("body").toggleClass("is-fixed");
+        });
+    });
+</script>
 <body>
     <!--BEGIN HEADER-->
     <header class="header">
@@ -23,7 +37,7 @@
                         <a href="#"><img src="assest/logo.png" alt=""></a>
                     </div>
                     <div class="header__menu-mobile">
-                        <img src="/assest/menu.png" alt="">
+                        <img src="./assest/menu.png" alt="">
                     </div>
                 </div>
                 <div class="header__search-mobile">
@@ -33,7 +47,7 @@
                     </button>
                 </div>
                 <div class="header__menu">
-                    <nav class="header__top--menu">
+                    <nav class="header__top-menu">
                         <ul>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Order resources</a></li>
@@ -47,7 +61,7 @@
                             </button>
                         </div>
                     </nav>
-                    <nav class="header__bottom--menu">
+                    <nav class="header__bottom-menu">
                         <ul>
                             <li><a href="#">Men's health</a></li>
                             <li><a href="#">Resources & tools</a></li>
@@ -64,33 +78,35 @@
     <!--BEGIN MAIN-->
     <main>
     <!--BEGIN BANNER-->
-        <div class="banner">
-            <div class="banner__image">
-                <picture>
-                    <source media="(min-width: 650px)" srcset="./assest/bgr-min650.png">
-                    <source media="(min-width: 465px)" srcset="./assest/bgr-min465.png">
-                    <img src="./assest/bgr-auto.png">
-                </picture>
-                <div class="container">
-                    <div class="banner__content">
-                        <h1>Plus Paternal:<br> A focus on fathers</h1>
-                        <p>We're calling for a fundamental shift in the way society and the health<br>system view fathers. Will you support the Case for Change?</p>
-                        <a class="btn" href="#">SEE THE CASE FOR CHANGE</a>
-                    </div>
+    <div class="banner">
+        <div class="banner__image">
+            <picture>
+                <source media="(min-width: 650px)" srcset="./assest/bgr-min650.png">
+                <source media="(min-width: 465px)" srcset="./assest/bgr-min465.png">
+                <img src="./assest/bgr-auto.png">
+            </picture>
+            <div class="banner__content">
+                <h1>Plus Paternal:<br> A focus on fathers</h1>
+                <p>We're calling for a fundamental shift in the way society and the health<br>system view fathers. Will you support the Case for Change?</p>
+                <div class="banner__button">
+                    <a class="btn" href="#">SEE THE CASE FOR CHANGE</a>
                 </div>
             </div>
-            <div class="banner__text">
-                <div class="container">
-                    <div class="banner__wrap">
-                        <div class="banner__body">
-                            <h4>Due to COVID-19, you may be feeling anxious, stressed and worried.</h4>
-                            <p>if you're struggling to cope and need someone to talk to, there's help out there.</p>
-                        </div>
+        </div>
+        <div class="banner__text">
+            <div class="container">
+                <div class="banner__wrap">
+                    <div class="banner__body">
+                        <h4>Due to COVID-19, you may be feeling anxious, stressed and worried.</h4>
+                        <p>if you're struggling to cope and need someone to talk to, there's help out there.</p>
+                    </div>
+                    <div class="banner__button1">
                         <a class="btn" href="#">FIND OUT MORE</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!--END BANNER-->
     <!--BEGIN SERVICES-->
         <div class="services">
@@ -100,32 +116,44 @@
                         <img src="assest/services1.png" alt="">
                         <div class="services__content">
                             <h5>Men's health topics</h5>
-                            <p>Make informed decisions about your health with easy<br>-to-understand information on a range of men's health<br>conditions.</p>
-                            <a href="#" class="btn">FIND OUT MORE</a>
+                            <p class="services__text">Make informed decisions about your health with easy<br>-to-understand information on a range of men's health<br>conditions.</p>
+                            <p class="services__text-mobile">Information on a range of men's health conditions</p>
+                            <div class="services__button">
+                                <a href="#" class="btn">FIND OUT MORE</a>
+                            </div>
                         </div>
                     </div>
                     <div class="services__member">
                         <img src="assest/services2.png" alt="">
                         <div class="services__content">
                             <h5>Latest news</h5>
-                            <p>Stay informed on men's health issues with articles for men<br>and boys, their family and<br>friends, and health professionals.</p>
-                            <a href="#" class="btn">FIND OUT MORE</a>
+                            <p class="services__text">Stay informed on men's health issues with articles for men<br>and boys, their family and<br>friends, and health professionals.</p>
+                            <p class="services__text-mobile">Stay informed on men's health issues</p>
+                            <div class="services__button">
+                                <a href="#" class="btn">FIND OUT MORE</a>
+                            </div>
                         </div>
                     </div>
                     <div class="services__member">
                         <img src="assest/services3.png" alt="">
                         <div class="services__content">
                             <h5>Your stories</h5>
-                            <p>Real stories from real Aussie<br>men who have lived with ,or currently live with, a health condition. These stories give hope, inspire, and change lives.</p>
-                            <a href="#" class="btn">FIND OUT MORE</a>
+                            <p class="services__text">Real stories from real Aussie<br>men who have lived with ,or currently live with, a health condition. These stories give hope, inspire, and change lives.</p>
+                            <p class="services__text-mobile">Real stories from real Aussie men.</p>
+                            <div class="services__button">
+                                <a href="#" class="btn">FIND OUT MORE</a>
+                            </div>
                         </div>
                     </div>
                     <div class="services__member">
                         <img src="assest/services444.png" alt="">
                         <div class="services__content">
                             <h5>Resource library</h5>
-                            <p>Browse through our resource library and download resources about the reproductive and sexual conditions that can affect you.</p>
-                            <a href="#" class="btn">FIND OUT MORE</a>
+                            <p class="services__text">Browse through our resource library and download resources about the reproductive and sexual conditions that can affect you.</p>
+                            <p class="services__text-mobile">Browse through our resource library.</p>
+                            <div class="services__button">
+                                <a href="#" class="btn">FIND OUT MORE</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="button">
+                <div class="viewed__button button">
                     <a class="btn" href="">WATCH MORE VIDEOS</a>
                 </div>
             </div>
@@ -164,7 +192,12 @@
     <!--END VIEWED-->
     <!--BEGIN EDUCATION-->
         <div class="education">
-            <img src="assest/education.png" alt="">
+            <div class="education__img">
+                <img src="assest/education.png" alt="">
+            </div>
+            <div class="education__img-mobile">
+                <img src="./assest/img mobile.png" alt="">
+            </div>
             <div class="education__content">
                 <h2>Education and traning for<br>health professionals</h2>
                 <p>Advance your knowledge and skills in male reproductive and sexual health with our active learning modules (ALMs). Assredited by leading health organisations RACGP, ACRRM and APNA, each ALM offers high quality,<br>structured and self-directed learning opportunities.</p>
@@ -180,7 +213,7 @@
                         <img src="assest/question1.jpg" alt="">
                         <div class="questions__time">
                             <p>20 Jan 2021|</p>
-                            <img src="/assest/clock.png" alt="">
+                            <img src="./assest/clock.png" alt="">
                             <p>12 min read</p>
                         </div>
                         <div class="questions__text">
@@ -194,7 +227,7 @@
                         <img src="assest/question2.jpg" alt="">
                         <div class="questions__time">
                             <p>20 Jan 2021|</p>
-                            <img src="/assest/clock.png" alt="">
+                            <img src="./assest/clock.png" alt="">
                             <p>12 min read</p>
                         </div>
                         <div class="questions__text">
@@ -208,7 +241,7 @@
                         <img src="assest/qiestion3.jpg" alt="">
                         <div class="questions__time">
                             <p>20 Jan 2021|</p>
-                            <img src="/assest/clock.png" alt="">
+                            <img src="./assest/clock.png" alt="">
                             <p>12 min read</p>
                         </div>
                         <div class="questions__text">
@@ -218,8 +251,22 @@
                             <a href="#">Read more</a>
                         </div>
                     </div>
+                    <div class="questions__wrap-mobile">
+                        <img src="assest/question-mobile.png" alt="">
+                        <div class="questions__time">
+                            <p>20 Jan 2021|</p>
+                            <img src="./assest/clock.png" alt="">
+                            <p>12 min read</p>
+                        </div>
+                        <div class="questions__text">
+                            <a>Debunking the myths on male fertility</a>
+                        </div>
+                        <div class="questions__button">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="button">
+                <div class="questions__click">
                     <a class="btn" href="">READ MORE NEWS</a>
                 </div>
             </div>
@@ -268,32 +315,31 @@
                         </div>
                     </form>
                 </div>
-                <div class="subscribe__right-form">
+                <class class="subscribe__right-form">
                     <label class="subscribe__label1" for="date">Date of Birth*</label>
                     <div class="subscribe__wrap">
-                        <div class="subscribe__date">
-                            <input class="subscribe__in1" type="text" name="date" id=""placeholder="DD">
-                        </div>
-                        <div class="subscribe__month">
-                            <input class="subscribe__in1" type="text" name="month" id=""placeholder="MM">
-                        </div>
-                        <div class="subscribe__year">
-                            <input class="subscribe__in1" type="text" name="year" id=""placeholder="YYYY">
+                        <div class="subscribe__right">
+                            <div class="subscribe__date">
+                                <input class="subscribe__in1 subscribe__in2" type="text" name="date" id=""placeholder="DD">
+                            </div>
+                            <div class="subscribe__month">
+                                <input class="subscribe__in1" type="text" name="month" id=""placeholder="MM">
+                            </div>
+                            <div class="subscribe__year">
+                                <input class="subscribe__in1" type="text" name="year" id=""placeholder="YYYY">
+                            </div>
                         </div>
                     </div>
                     <p>Which newsletter/s would you like to subscribe to?*</p>
                     <div class="subscribe__wrap1">
-                        <div class="subscribe__member">
-                            <input class="subscribe__small--in" type="checkbox" name="" id="">
-                            <label for="">For men, family and friends</label>
-                        </div>
-                        <div class="subscribe__member">
-                            <input class="subscribe__small--in" type="checkbox" name="" id="">
-                            <label for="">For health professionals and organisations</label>
-                        </div>
+                        <input class="subscribe__small--in" type="checkbox" name="" id="">
+                        <label for="">For men, family and friends</label>
+                        <br>
+                        <input class="subscribe__small--in" type="checkbox" name="" id="">
+                        <label for="">For health professionals and organisations</label>
                     </div>
                     <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=2&k=6LdH3_4UAAAAAHH4rueraBmsBi1vET67jMCg3gbi&co=aHR0cHM6Ly93d3cuaGVhbHRoeW1hbGUub3JnLmF1OjQ0Mw..&hl=en&type=image&v=Iwg4ANhK7Iu8SHToSsE0E20K&theme=light&size=normal&cb=sbp7egtt7tx6"></iframe>
-                    <a href="#">SUBSCRIBE</a>
+                    <a href="#"></a>
                 </div>
             </div>
         </div>
@@ -301,9 +347,9 @@
     <!--BEGIN CONTACT-->
         <div class="contact">
             <div class="container">
-                <div class="wrap">
+                <div class="contact__wrap">
                     <div class="contact__logo">
-                        <a href="#"><img src="/assest/logo1.png" alt=""></a>
+                        <a href="#"><img src="./assest/logo1.png" alt=""></a>
                     </div>
                     <nav class="contact__menu">
                         <ul>
@@ -321,17 +367,17 @@
                     </nav>
                     <nav class="contact__menu">
                         <ul>
-                            <li><a href="">Contact us</a></li>
+                            <li><a href="">Donate</a></li>
                             <li><a href="">For health professionals</a></li>
                             <li><a href="">Resources & tools</a></li>
                         </ul>
                     </nav>
                     <div class="contact__icon">
-                        <a class="fb" href=""><img src="" alt=""></a>
-                        <a class="tw" href=""><img src="" alt=""></a>
-                        <a class="yt" href=""><img src="" alt=""></a>
-                        <a class="ins" href=""><img src="" alt=""></a>
-                        <a class="in" href=""><img src="" alt=""></a>
+                        <a class="contact__link fb" href=""></a>
+                        <a class="contact__link tw" href=""></a>
+                        <a class="contact__link yt" href=""></a>
+                        <a class="contact__link ins" href=""></a>
+                        <a class="contact__link in" href=""></a>
                     </div>
                 </div>
                 <hr>
@@ -339,13 +385,13 @@
                     <p>Healthy Male is funded by the Australian Government Department of Health.</p>
                     <p>This website does not host any form of advertisement.</p>
                     <p>Information provided on this website is not a substitute for medical advice.</p>
-                    <p>Healthy Male acknowledges the Traditional Owners of the land. We pay our respects to Elders past, present and future. We are committed to providing respectful, inclusive services and work environments where all individuals feel accepted, safe, affirmed and celebrated.</p>
+                    <p class="contact__p">Healthy Male acknowledges the Traditional Owners of the land. We pay our respects to Elders past, present and future. We are committed to providing respectful, inclusive services and work environments where all individuals feel accepted, safe, affirmed and celebrated.</p>
                 </div>
                 <hr>
-                <div class="contact__logo">
-                    <img src="assest/contact1.png" alt="">
-                    <img src="assest/contact2.png" alt="">
-                    <img src="assest/contact3.png" alt="">
+                <div class="contact__logo1">
+                    <a href="#"><img src="assest/contact1.png" alt=""></a>
+                    <a href="#"><img src="assest/contact2.png" alt=""></a>
+                    <a href="#"><img src="assest/contact3.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -353,17 +399,21 @@
     </main>
     <!--END MAIN-->
     <!--BEGIN FOOTER-->
-    <footer class="footer">
-        <div class="footer__text">
-            <p>&copy;Healthy Male 2021</p>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__left">
+                    <p>&copy;Healthy Male 2021</p>
+                </div>
+                <nav class="footer__right">
+                    <ul>
+                        <li><a href="">Disclaimer / </a></li>
+                        <li><a href="">Sitemap / </a></li>
+                        <li><a href="">Terms of use</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="footer__menu">
-            <ul>
-                <li><a href="">Disclaimer / </a></li>
-                <li><a href="">Sitemap / </a></li>
-                <li><a href="">Terms of use</a></li>
-            </ul>
-        </nav>
     </footer>
     <!--END FOOTER-->
 </body>

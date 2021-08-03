@@ -1,0 +1,24 @@
+.footer{
+    position: relative;
+    padding: 16px 0;
+    display: flex;
+    
+    p{
+        color: $blu--text;
+    }
+    a{
+        color: $blu--text;
+    }
+    &__left{
+        margin-left: 20px;
+    }
+    &__right{
+        ul{
+            display: flex;
+        }
+        position: absolute;
+        left: 38%;
+    }
+    @media (max-width:768px) {
+    }
+}

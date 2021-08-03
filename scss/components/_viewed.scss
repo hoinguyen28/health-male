@@ -31,5 +31,30 @@
         position: relative;
         width: 100%;
     }
-    
+    @media (max-width:768px) {
+    margin: 48px 0;
+        &__extra{
+            display: none;
+        }
+        h3{
+            font-size: 52px;
+            margin-bottom: 24px;
+        }
+        &__main{
+            width: 100%;
+            margin: 0 0 30px 0;
+            img{
+                height: auto;
+            }
+        }
+        &__button{
+            text-align: center;
+            align-items: center;
+            a{
+                padding: 0 20;
+                right: 33%;
+            }
+        }
+        
+    }
 }
